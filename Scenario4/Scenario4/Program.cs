@@ -8,7 +8,6 @@ namespace Scenario4
     {
         static void Main(string[] args)
         {
-            // Task 1
             Song song = new Song()
             {
                 Title = "Hey Jude",
