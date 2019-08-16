@@ -16,30 +16,17 @@ namespace Scenario2
 
         /* TODO: Return a string containing properties from a given config file with following modifications:
          1) Multiply all values by 2.
-         2) Insert a property "input_frequency" with value 6 */
+         2) Insert a property "input_frequency" with value 6.
+         Make sure you take the numeric values of properties.*/
         private static string DoubleAllProperties(string configuration)
         {
-            //var configurationObject = JsonNode.Parse(configuration);
-            var configurationObject = new JsonObject()
-            {
-                { "domain_size", 2 },
-                { "echo_level", 0 },
-                { "displacement_relative_tolerance", 0.0001 },
-                { "displacement_absolute_tolerance", 1e-9 },
-                { "output_frequency", 4 },
-                { "factor", 9.8 },
-            };
-
+            var configurationObject = JsonNode.Parse(configuration, DuplicatePropertyNameHandling.Ignore);
+            
             foreach(KeyValuePair<string, JsonNode> property in configurationObject)
             {
                 var jsonNumber = property.Value as JsonNumber;
-                if(jsonNumber.TryGetInt32(out int integerNumber))
+                if (jsonNumber != null && jsonNumber.TryGetDouble(out double doubleNumber))
                 {
-                    jsonNumber.SetInt32(integerNumber * 2);
-                }
-                else
-                {
-                    jsonNumber.TryGetDouble(out double doubleNumber);
                     jsonNumber.SetDouble(doubleNumber * 2);
                 }
             }

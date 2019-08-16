@@ -14,14 +14,14 @@ namespace Scenario3
         /* TODO: 
          1) Modify the given JsonElement by:
             * changing e-mail property to "annp@mail.com"
-            * adding a grade 77.89 between 89.5 and 56.0 in the grades array.
+            * adding a grade 55 between 60 and 85 in the grades array.
          2) Return back JsonElement object.*/
         private static JsonElement ModifyStudent(JsonElement student)
         {
             var modifiableStudent = JsonNode.DeepCopy(student) as JsonObject;
             modifiableStudent["email"] = (JsonString)"annp@mail.com";
             var gradesArray = modifiableStudent["grades"] as JsonArray;
-            gradesArray.Insert(2, 77.89);
+            gradesArray.Insert(2, 55);
             return modifiableStudent.AsJsonElement();
         }
 
@@ -32,7 +32,7 @@ namespace Scenario3
                 ""first name"" : ""Ann"",
                 ""last name"" : ""Predictable"",
                 ""email"" : ""ann.predictable@mail.com"",
-                ""grades"": [73.21, 89.5, 56.0],
+                ""grades"": [70, 60, 85],
             }";
 
             JsonDocument document = JsonDocument.Parse(jsonString);
