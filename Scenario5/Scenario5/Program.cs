@@ -44,7 +44,7 @@ namespace Scenario5
             Account account = new Account
             {
                 Email = "john@example.com",
-                CreatedDate = DateTimeOffset.Now
+                CreatedDate = DateTimeOffset.Parse("August 31, 2019")
             };
 
             return account;
