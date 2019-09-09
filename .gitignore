@@ -279,3 +279,6 @@ config.ps1
 
 # VS debug support files
 launchSettings.json
+
+# Helper scripts
+*.sh
