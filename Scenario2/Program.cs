@@ -8,7 +8,7 @@ namespace Scenario2
     {
         static void Main(string[] args)
         {
-            string configuration = ParseFile("config.json");
+            string configuration = File.ReadAllText("config.json");
             string doubledProperties = DoubleAllProperties(configuration);
             Console.WriteLine(doubledProperties);
         }
@@ -20,35 +20,6 @@ namespace Scenario2
         private static string DoubleAllProperties(string configuration)
         {
             throw new NotImplementedException();
-        }
-
-        private static string ParseFile(string fileName)
-        {
-            string dir = Directory.GetCurrentDirectory();
-
-            string fullPath = dir + "\\" + fileName;
-
-            int count = 0;
-            while (true)
-            {
-                if (count > 5)
-                {
-                    throw new FileNotFoundException($"The file necessary for this scenario could not be found. Looking for {fileName}.");
-                }
-                if (File.Exists(fullPath))
-                {
-                    break;
-                }
-                if (dir.EndsWith("Scenario3\\"))
-                {
-                    throw new FileNotFoundException($"The file necessary for this scenario could not be found (stopped searching at project root). Looking for {fileName}.");
-                }
-                dir = Path.GetFullPath(Path.Combine(dir, @"..\"));
-                fullPath = dir + "\\" + fileName;
-                count++;
-            }
-
-            return File.ReadAllText(fullPath);
         }
     }
 }
