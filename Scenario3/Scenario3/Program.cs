@@ -28,7 +28,7 @@ namespace Scenario3
                 ""first name"" : ""Ann"",
                 ""last name"" : ""Predictable"",
                 ""email"" : ""ann.predictable@mail.com"",
-                ""grades"": [70, 60, 85],
+                ""grades"": [70, 60, 85]
             }";
             
             JsonDocument document = JsonDocument.Parse(jsonString);
