@@ -5,5 +5,5 @@
   "displacement_absolute_tolerance": 1e-9,
   "output_frequency": 4,
   "factor": 9.8,
-  "domain_size": "two",
+  "domain_size": "two"
 }
