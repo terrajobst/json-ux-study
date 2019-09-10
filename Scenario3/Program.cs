@@ -9,6 +9,7 @@ namespace Scenario3
         {
             JsonElement student = GetStudent();
             student = ModifyStudent(student);
+            Console.WriteLine(student.ToString());
         }
 
         /* TODO: 

@@ -16,7 +16,7 @@ namespace Scenario2
         /* TODO: Return a string containing properties from a given config file with following modifications:
          1) Multiply all values by 2.
          2) Insert a property "input_frequency" with value 6.
-         Make sure you take the numeric values of properties.*/
+         3)	Make sure the resulting JSON only contains numeric values without dropping any properties. */
         private static string DoubleAllProperties(string configuration)
         {
             throw new NotImplementedException();

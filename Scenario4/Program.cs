@@ -23,7 +23,7 @@ namespace Scenario4
         }
 
         // TODO 1) Serialize the "Song" object to a JSON representation where the Genre property is written as a string.
-        // For example, {"Title":"Three Little Birds","Artist":"Bob Marley","Genre":"Reggae"}
+        // 2) Ensure the Genre property is written as a string. For example, {"Title":"Three Little Birds","Artist":"Bob Marley","Genre":"Reggae"}
         private static string Serialize(Song song)
         {
             // <Add/modify code here>

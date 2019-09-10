@@ -22,7 +22,7 @@ namespace Scenario5
             Console.ReadLine();
         }
 
-        // The Example Company uses the MM/dd/yy format for DateTimeOffset values in their Account models.
+        // The Example Company uses the MM/dd/yyyy format for DateTimeOffset values in their Account models.
         // TODO: 1) Serialize the "account" object to a custom-formatted JSON string and return it.
         private static string SerializeToCustomJson(Account account)
         {
@@ -30,7 +30,7 @@ namespace Scenario5
             return "";
         }
 
-        // The Example Company uses the MM/dd/yy format for DateTimeOffset values in their Account models.
+        // The Example Company uses the MM/dd/yyyy format for DateTimeOffset values in their Account models.
         // TODO: 2) Deserialize the custom-formatted JSON string as an "account" object and return it.
         private static Account DeserializeFromCustomJson(string json)
         {
