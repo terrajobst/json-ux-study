@@ -16,7 +16,7 @@ namespace Scenario3
          1) Modify the given JsonElement by:
             * changing e-mail property to "annp@mail.com"
             * adding a grade 55 between 60 and 85 in the grades array.
-         2) Return back JsonElement object.*/    
+         2) Return back the modified JSON as an instance of JsonElement.*/    
         private static JsonElement ModifyStudent(JsonElement student)
         {
             throw new NotImplementedException();
