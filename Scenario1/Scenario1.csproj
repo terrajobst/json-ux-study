@@ -6,7 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Text.Json" Version="5.0.0-dev.19415.1" />
+    <PackageReference Include="System.Text.Json" Version="5.0.0-alpha1.19459.1" />
   </ItemGroup>
 
 </Project>
