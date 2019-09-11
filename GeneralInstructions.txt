@@ -1,4 +1,4 @@
-Please start with Scenario 1 and work your way through to Scenario 5.
+Please start with Scenario 1 and work your way through to Scenario 5, in that order.
 
 You are allowed to look at any of the cs, csproj, and json files within the repository.
 
