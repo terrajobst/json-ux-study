@@ -8,7 +8,7 @@ namespace Scenario2
     {
         static void Main(string[] args)
         {
-            string configuration = File.ReadAllText("config.json");
+            string configuration = File.ReadAllText("input.json");
             string doubledProperties = DoubleAllProperties(configuration);
             Console.WriteLine(doubledProperties);
         }
