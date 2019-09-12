@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="config.json" CopyToOutputDirectory="PreserveNewest" />
+    <None Update="input.json" CopyToOutputDirectory="PreserveNewest" />
   </ItemGroup>
 
 </Project>
