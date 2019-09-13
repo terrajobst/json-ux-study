@@ -17,19 +17,31 @@ namespace Scenario4
 
             string json = Serialize(song);
             Console.WriteLine(json);
-            
+
             Console.WriteLine("Press any key to continue ...");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
-        // TODO 1) Serialize the "Song" object to a JSON representation where the Genre property is written as a string.
-        // 2) Ensure the Genre property is written as a string. For example, {"Title":"Three Little Birds","Artist":"Bob Marley","Genre":"Reggae"}
+        // TODO: Serialize the "Song" object to a JSON representation
+        //       where instead of a number the property with the Genre
+        //       enum is written as a string. So instead of
+        //
+        //           "Genre": 3
+        //
+        //       it should be
+        //
+        //           "Genre": "PopRock"
+        //
         private static string Serialize(Song song)
         {
-            // <Add/modify code here>
+            // TODO: Add/modify code here
             return "";
         }
     }
+
+    // -------------------------------------
+    // The code below SHOULD NOT BE modified
+    // -------------------------------------
 
     public enum Genre { Classical, Rap, Soul, PopRock, Reggae };
 

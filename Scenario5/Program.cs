@@ -19,24 +19,34 @@ namespace Scenario5
             Console.WriteLine(jetAccount?.CreatedDate);
 
             Console.WriteLine("Press any key to continue ...");
-            Console.ReadLine();
+            Console.ReadKey();
         }
 
-        // The Example Company uses the MM/dd/yyyy format for DateTimeOffset values in their Account models.
-        // TODO: 1) Serialize the "account" object to a custom-formatted JSON string and return it.
+        // We want to serialize the DateTimeOffset using a specific format,
+        // namely as "MM/dd/yyyy".
+        //
+        // TODO: Serialize the given account to a custom-formatted JSON string
+        //       and return it.
         private static string SerializeToCustomJson(Account account)
         {
-            // <Add/modify code here>
+            // TODO: Add/modify code here
             return "";
         }
 
-        // The Example Company uses the MM/dd/yyyy format for DateTimeOffset values in their Account models.
-        // TODO: 2) Deserialize the custom-formatted JSON string as an "account" object and return it.
+        // The data we're given uses the "MM/dd/yyyy" format for DateTimeOffset
+        // values.
+        //
+        // TODO: Deserialize the custom-formatted JSON string as an Account object
+        //       and return it.
         private static Account DeserializeFromCustomJson(string json)
         {
-            // <Add/modify code here>
+            // TODO: Add/modify code here
             return null;
         }
+
+        // -------------------------------------
+        // The code below SHOULD NOT BE modified
+        // -------------------------------------
 
         private static Account GetAccount()
         {
