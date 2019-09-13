@@ -6,16 +6,6 @@ namespace Scenario2
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            string configuration = File.ReadAllText("input.json");
-            string doubledProperties = DoubleAllProperties(configuration);
-            Console.WriteLine(doubledProperties);
-
-            Console.WriteLine("Press any key to continue ...");
-            Console.ReadKey();
-        }
-
         /* TODO: Return a string containing properties from a given input JSON
                  file with following modifications:
          1) Multiply all existing numbers by 2.
@@ -25,5 +15,21 @@ namespace Scenario2
             // TODO: Add/modify code here
             throw new NotImplementedException();
         }
+
+        // -------------------------------------
+        // The code below SHOULD NOT BE modified
+        // -------------------------------------
+
+        #region Main
+        static void Main(string[] args)
+        {
+            string configuration = File.ReadAllText("input.json");
+            string doubledProperties = DoubleAllProperties(configuration);
+            Console.WriteLine(doubledProperties);
+
+            Console.WriteLine("Press any key to continue ...");
+            Console.ReadKey();
+        }
+        #endregion
     }
 }

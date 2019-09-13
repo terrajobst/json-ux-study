@@ -6,22 +6,6 @@ namespace Scenario4
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Song song = new Song()
-            {
-                Title = "Hey Jude",
-                Artist = "The Beatles",
-                Genre = Genre.PopRock,
-            };
-
-            string json = Serialize(song);
-            Console.WriteLine(json);
-
-            Console.WriteLine("Press any key to continue ...");
-            Console.ReadKey();
-        }
-
         // TODO: Serialize the "Song" object to a JSON representation
         //       where instead of a number the property with the Genre
         //       enum is written as a string. So instead of
@@ -51,4 +35,22 @@ namespace Scenario4
         public string Artist { get; set; }
         public Genre Genre { get; set; }
     }
+
+    #region Main
+    static void Main(string[] args)
+    {
+        Song song = new Song()
+        {
+            Title = "Hey Jude",
+            Artist = "The Beatles",
+            Genre = Genre.PopRock,
+        };
+
+        string json = Serialize(song);
+        Console.WriteLine(json);
+
+        Console.WriteLine("Press any key to continue ...");
+        Console.ReadKey();
+    }
+    #endregion
 }

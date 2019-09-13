@@ -5,15 +5,6 @@ namespace Scenario1
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            string employee = GetEmployee();
-            Console.WriteLine(employee);
-
-            Console.WriteLine("Press any key to continue ...");
-            Console.ReadKey();
-        }
-
         /* TODO: 
          1) Programmatically create the JSON tree structure, also known as the
             Document Object Model (DOM), for the following JSON text.
@@ -37,5 +28,20 @@ namespace Scenario1
             // TODO: Add/modify code here
             throw new NotImplementedException();
         }
+
+        // -------------------------------------
+        // The code below SHOULD NOT BE modified
+        // -------------------------------------
+
+        #region Main
+        static void Main(string[] args)
+        {
+            string employee = GetEmployee();
+            Console.WriteLine(employee);
+
+            Console.WriteLine("Press any key to continue ...");
+            Console.ReadKey();
+        }
+        #endregion
     }
 }

@@ -8,20 +8,6 @@ namespace Scenario5
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            Account johnAccount = GetAccount();
-            Console.WriteLine(SerializeToCustomJson(johnAccount));
-
-            string customJson = GetCustomFormattedAccountJson();
-            Account jetAccount = DeserializeFromCustomJson(customJson);
-            Console.WriteLine(jetAccount?.Email);
-            Console.WriteLine(jetAccount?.CreatedDate);
-
-            Console.WriteLine("Press any key to continue ...");
-            Console.ReadKey();
-        }
-
         // We want to serialize the DateTimeOffset using a specific format,
         // namely as "MM/dd/yyyy".
         //
@@ -48,6 +34,12 @@ namespace Scenario5
         // The code below SHOULD NOT BE modified
         // -------------------------------------
 
+        public class Account
+        {
+            public string Email { get; set; }
+            public DateTimeOffset CreatedDate { get; set; }
+        }
+
         private static Account GetAccount()
         {
             // Note: Do NOT modify the Account object creation.
@@ -69,11 +61,21 @@ namespace Scenario5
             }";
             return json;
         }
-    }
 
-    public class Account
-    {
-        public string Email { get; set; }
-        public DateTimeOffset CreatedDate { get; set; }
+        #region Main
+        static void Main(string[] args)
+        {
+            Account johnAccount = GetAccount();
+            Console.WriteLine(SerializeToCustomJson(johnAccount));
+
+            string customJson = GetCustomFormattedAccountJson();
+            Account jetAccount = DeserializeFromCustomJson(customJson);
+            Console.WriteLine(jetAccount?.Email);
+            Console.WriteLine(jetAccount?.CreatedDate);
+
+            Console.WriteLine("Press any key to continue ...");
+            Console.ReadKey();
+        }
+        #endregion
     }
 }
