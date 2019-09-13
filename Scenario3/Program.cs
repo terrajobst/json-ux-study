@@ -5,16 +5,6 @@ namespace Scenario3
 {
     class Program
     {
-        static void Main(string[] args)
-        {
-            JsonElement student = GetStudent();
-            student = ModifyStudent(student);
-            Console.WriteLine(student.ToString());
-
-            Console.WriteLine("Press any key to continue ...");
-            Console.ReadKey();
-        }
-
         /* TODO: 
          1) Modify the given JsonElement by:
             * changing the e-mail property to "annp@mail.com"
@@ -44,5 +34,17 @@ namespace Scenario3
             JsonDocument document = JsonDocument.Parse(jsonString);
             return document.RootElement;
         }
+
+        #region Main
+        static void Main(string[] args)
+        {
+            JsonElement student = GetStudent();
+            student = ModifyStudent(student);
+            Console.WriteLine(student.ToString());
+
+            Console.WriteLine("Press any key to continue ...");
+            Console.ReadKey();
+        }
+        #endregion
     }
 }
