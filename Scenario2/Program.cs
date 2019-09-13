@@ -9,7 +9,9 @@ namespace Scenario2
         /* TODO: Return a string containing properties from a given input JSON
                  file with following modifications:
          1) Multiply all existing numbers by 2.
-         2) Insert a property "input_frequency" with value 6. */
+         2) Insert a property "input_frequency" with value 6.
+
+           DO NOT use a serializer, but parsing is OK. */
         private static string DoubleAllProperties(string configuration)
         {
             // TODO: Add/modify code here
