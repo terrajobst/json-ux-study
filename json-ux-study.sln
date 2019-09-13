@@ -1,17 +1,26 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29311.250
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenario1", "Scenario1\Scenario1.csproj", "{252947A8-4A02-4088-BDD7-0161535C28B4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scenario1", "Scenario1\Scenario1.csproj", "{252947A8-4A02-4088-BDD7-0161535C28B4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenario2", "Scenario2\Scenario2.csproj", "{3D156752-CF5A-4779-A0CA-E9AEF7F914F6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scenario2", "Scenario2\Scenario2.csproj", "{3D156752-CF5A-4779-A0CA-E9AEF7F914F6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenario3", "Scenario3\Scenario3.csproj", "{3AD653A1-FB04-400B-8F59-5D927853381D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scenario3", "Scenario3\Scenario3.csproj", "{3AD653A1-FB04-400B-8F59-5D927853381D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenario4", "Scenario4\Scenario4.csproj", "{4237A75E-7909-4634-A77A-AF9499231619}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scenario4", "Scenario4\Scenario4.csproj", "{4237A75E-7909-4634-A77A-AF9499231619}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scenario5", "Scenario5\Scenario5.csproj", "{8D53BB56-1AF9-4AD1-B834-8BC6596825C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Scenario5", "Scenario5\Scenario5.csproj", "{8D53BB56-1AF9-4AD1-B834-8BC6596825C6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DOM", "DOM", "{75591BF7-1ABD-49F9-97A0-676D7500D4F1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Serialization", "Serialization", "{9C403ECB-A049-4513-85E0-6C293F6D8CAC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".Read Me", ".Read Me", "{C2AFDC4F-AB9D-4F50-8044-E9FE9AC07A64}"
+	ProjectSection(SolutionItems) = preProject
+		GeneralInstructions.txt = GeneralInstructions.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,9 +30,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{252947A8-4A02-4088-BDD7-0161535C28B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -86,5 +92,18 @@ Global
 		{8D53BB56-1AF9-4AD1-B834-8BC6596825C6}.Release|x64.Build.0 = Release|Any CPU
 		{8D53BB56-1AF9-4AD1-B834-8BC6596825C6}.Release|x86.ActiveCfg = Release|Any CPU
 		{8D53BB56-1AF9-4AD1-B834-8BC6596825C6}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{252947A8-4A02-4088-BDD7-0161535C28B4} = {75591BF7-1ABD-49F9-97A0-676D7500D4F1}
+		{3D156752-CF5A-4779-A0CA-E9AEF7F914F6} = {75591BF7-1ABD-49F9-97A0-676D7500D4F1}
+		{3AD653A1-FB04-400B-8F59-5D927853381D} = {75591BF7-1ABD-49F9-97A0-676D7500D4F1}
+		{4237A75E-7909-4634-A77A-AF9499231619} = {9C403ECB-A049-4513-85E0-6C293F6D8CAC}
+		{8D53BB56-1AF9-4AD1-B834-8BC6596825C6} = {9C403ECB-A049-4513-85E0-6C293F6D8CAC}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5DF9F38-0E1C-43A7-8095-5D14E180AE31}
 	EndGlobalSection
 EndGlobal

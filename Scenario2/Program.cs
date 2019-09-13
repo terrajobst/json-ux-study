@@ -19,6 +19,7 @@ namespace Scenario2
          3) Make sure the resulting JSON only contains numeric values without dropping any properties. */
         private static string DoubleAllProperties(string configuration)
         {
+            // TODO: Add/modify code here
             throw new NotImplementedException();
         }
     }

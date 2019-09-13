@@ -26,10 +26,14 @@ namespace Scenario4
         // 2) Ensure the Genre property is written as a string. For example, {"Title":"Three Little Birds","Artist":"Bob Marley","Genre":"Reggae"}
         private static string Serialize(Song song)
         {
-            // <Add/modify code here>
+            // TODO: Add/modify code here
             return "";
         }
     }
+
+    // -------------------------------------
+    // The code below SHOULD NOT BE modified
+    // -------------------------------------
 
     public enum Genre { Classical, Rap, Soul, PopRock, Reggae };
 

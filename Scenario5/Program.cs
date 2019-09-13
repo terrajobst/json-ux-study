@@ -26,7 +26,7 @@ namespace Scenario5
         // TODO: 1) Serialize the "account" object to a custom-formatted JSON string and return it.
         private static string SerializeToCustomJson(Account account)
         {
-            // <Add/modify code here>
+            // TODO: Add/modify code here
             return "";
         }
 
@@ -34,9 +34,13 @@ namespace Scenario5
         // TODO: 2) Deserialize the custom-formatted JSON string as an "account" object and return it.
         private static Account DeserializeFromCustomJson(string json)
         {
-            // <Add/modify code here>
+            // TODO: Add/modify code here
             return null;
         }
+
+        // -------------------------------------
+        // The code below SHOULD NOT BE modified
+        // -------------------------------------
 
         private static Account GetAccount()
         {

@@ -30,6 +30,7 @@ namespace Scenario1
          2) Return it as a string. */
         private static string GetEmployee()
         {
+            // TODO: Add/modify code here
             throw new NotImplementedException();
         }
     }

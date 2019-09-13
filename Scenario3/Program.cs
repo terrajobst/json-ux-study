@@ -19,8 +19,13 @@ namespace Scenario3
          2) Return back the modified JSON as an instance of JsonElement.*/
         private static JsonElement ModifyStudent(JsonElement student)
         {
+            // TODO: Add/modify code here
             throw new NotImplementedException();
         }
+
+        // -------------------------------------
+        // The code below SHOULD NOT BE modified
+        // -------------------------------------
 
         private static JsonElement GetStudent()
         {
